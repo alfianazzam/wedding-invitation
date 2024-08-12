@@ -1,0 +1,89 @@
+@keyframes fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.flower {
+  position: absolute;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+.flower1 {
+  width: 50px;
+  height: 50px;
+  background: url('/flower1.png') no-repeat center center;
+  background-size: contain;
+}
+
+.flower2 {
+  width: 60px;
+  height: 60px;
+  background: url('/flower2.png') no-repeat center center;
+  background-size: contain;
+}
+
+.flower3 {
+  width: 40px;
+  height: 40px;
+  background: url('/flower3.png') no-repeat center center;
+  background-size: contain;
+}
+
+.flower4 {
+  width: 70px;
+  height: 70px;
+  background: url('/flower4.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* Animasi zoom in dan zoom out */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animasi berdenyut untuk tombol */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-text {
+  animation: zoom 3s infinite;
+}
+
+.zoom-button {
+  animation: heartbeat 1s infinite;
+}
+
+/* Font dan warna kustom */
+.custom-font {
+  font-family: "Great Vibes", cursive;
+  color: #F2D8D7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.custom-nama {
+  font-family: "Cormorant Upright", serif;
+  color: #F2D8D7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}

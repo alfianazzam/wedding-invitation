@@ -1,0 +1,78 @@
+/* Kontainer utama */
+.bride-groom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #F1DDDB; /* Warna dari palet Anda */
+  }
+  
+  /* Kontainer untuk masing-masing potret */
+  .portrait-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Spasi antara potret */
+    width: 100%;
+    max-width: 400px; /* Ukuran maksimum untuk responsif */
+  }
+  
+  /* Bingkai potret */
+  .portrait-frame {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 10px solid #DFC1BE; /* Mengganti bingkai pink dengan warna dari palet */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: shake 3s infinite; /* Animasi goyang */
+  }
+  
+  /* Foto potret */
+  .portrait-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Detail potret */
+  .portrait-details {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* Nama */
+  .name {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    color: #C29897; /* Mengganti warna pink cerah dengan warna dari palet */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Informasi */
+  .info {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.5rem;
+    color: #D8B5B4; /* Mengganti warna pink gelap dengan warna dari palet */
+  }
+  
+  /* Animasi goyang bingkai */
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  

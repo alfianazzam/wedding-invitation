@@ -1,0 +1,111 @@
+/* Animasi hujan cinta */
+@keyframes love-rain {
+    0% {
+      transform: translateY(-100vh);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+  .animate-love-rain {
+    animation-name: love-rain;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animasi melompat masuk */
+  @keyframes bounce-in {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animate-bounce-in {
+    animation: bounce-in 1s ease-in-out;
+  }
+  
+  /* Animasi memudar masuk */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  /* Animasi goyang */
+  @keyframes shake {
+    0% { transform: translateX(-10px); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  /* Responsif untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .text-3xl {
+      font-size: 1.5rem; /* Mengurangi ukuran font untuk mobile */
+    }
+  
+    .py-12 {
+      padding-top: 2rem; /* Mengurangi padding atas untuk mobile */
+      padding-bottom: 2rem; /* Mengurangi padding bawah untuk mobile */
+    }
+  
+    .p-6 {
+      padding: 1rem; /* Mengurangi padding item countdown */
+    }
+  
+    .w-full {
+      width: 100%; /* Memastikan elemen mengambil lebar penuh */
+    }
+  
+    .aspect-w-16.aspect-h-9 iframe {
+      height: auto; /* Menjaga rasio tampilan video di perangkat mobile */
+    }
+  
+    /* Menyesuaikan animasi untuk tampilan mobile */
+    .animate-love-rain {
+      animation-duration: 8s; /* Perpanjang durasi animasi pada layar kecil */
+    }
+  
+    .animate-bounce-in {
+      animation-duration: 1.5s; /* Memperlambat animasi melompat masuk */
+    }
+  
+    .animate-fadeIn {
+      animation-duration: 1.5s; /* Memperlambat animasi memudar masuk */
+    }
+  
+    .animate-shake {
+      animation-duration: 0.7s; /* Memperlambat animasi goyang */
+    }
+  
+    /* Mengatur tata letak countdown-item agar responsif */
+    .countdown-item {
+      width: 80%; /* Mengatur lebar item countdown */
+      max-width: 150px; /* Memastikan lebar maksimum item countdown */
+    }
+  }
+  

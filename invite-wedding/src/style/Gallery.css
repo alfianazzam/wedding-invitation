@@ -1,0 +1,146 @@
+/* Gallery.css */
+
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f4f8; /* Warna latar belakang yang lebih netral */
+  }
+  
+  .gallery-title {
+    text-align: center;
+    color: #C29897;
+    font-size: 2.5rem;
+  }
+  
+  .gallery-button {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .gallery-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .prev-button {
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+  
+  .next-button {
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+  }
+  
+  .play-pause-button {
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .icon {
+    height: 24px;
+    width: 24px;
+    color: #C29897;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .border-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s, z-index 0.5s;
+  }
+  
+  .main-image {
+    transform: scale(1.1);
+    z-index: 2;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.6); /* Warna merah muda sangat lembut */
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    margin: 0 1.25rem; /* Jarak samping kanan dan kiri */
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: border 0.3s;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid #C29897;
+  }
+  
+  .floating-hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .heart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heart-icon {
+    color: #F4A1B4; /* Warna merah muda lembut untuk efek hati */
+    width: 3rem;
+    height: 3rem;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+  

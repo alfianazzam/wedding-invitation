@@ -1,0 +1,56 @@
+/* Hero.css */
+.heroSticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/hero.jpg"); /* Gambar background */
+  background-size: cover; /* Cover seluruh kontainer */
+  background-position: center; /* Center gambar */
+  color: white; /* Warna font untuk kontras */
+  text-align: center;
+  overflow: hidden; /* Pastikan animasi tidak meluap */
+}
+
+/* Menambahkan overlay gelap menggunakan pseudo-element */
+.heroSticky::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Overlay gelap */
+  z-index: 1; /* Pastikan overlay berada di atas gambar tetapi di bawah konten */
+}
+
+/* Memastikan konten berada di atas overlay */
+.heroSticky > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Opacity lebih kecil untuk bayangan */
+  letter-spacing: 2px;
+}
+
+.hero-name {
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive; /* Gunakan font Great Vibes */
+  line-height: 1.2;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* Opacity lebih kecil untuk bayangan */
+  letter-spacing: 2px;
+}

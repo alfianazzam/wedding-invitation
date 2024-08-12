@@ -1,0 +1,16 @@
+@keyframes move {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0) rotate(-10deg);
+    }
+  }
+  
+  .absolute svg {
+    animation: move 10s ease-in-out infinite;
+  }
+  
