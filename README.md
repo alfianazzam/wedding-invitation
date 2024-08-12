@@ -1,6 +1,3 @@
-Here’s a README template for your wedding invitation project on GitHub. This template aims to be interactive and user-friendly, using Markdown features to enhance readability and engagement.
-
-```markdown
 # 💍 Wedding Invitation Web App
 
 ![License](https://img.shields.io/github/license/alviangans/wedding-invitation)
