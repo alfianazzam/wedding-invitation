@@ -121,9 +121,3 @@ If you have any questions or feedback, feel free to reach out:
 ---
 
 Thank you for checking out the Wedding Invitation Web App! We hope this project helps make your special day even more memorable. 🎉
-
-### Tips for Using the README
-- Replace placeholders like `https://your-image-url.com/banner.jpg` and `https://your-demo-url.com` with actual URLs relevant to your project.
-- Customize any section according to the actual setup and structure of your project.
-
-This README provides a clear, organized, and interactive guide for users and developers alike to understand, use, and contribute to your project.
