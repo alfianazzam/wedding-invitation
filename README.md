@@ -23,8 +23,8 @@ Welcome to the **Wedding Invitation Web App** repository! This project is a beau
 
 Before you start, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (version X.X.X or later)
-- [npm](https://www.npmjs.com/) (version X.X.X or later)
+- [Node.js](https://nodejs.org/) (version 20.16.0 or later)
+- [npm](https://www.npmjs.com/) (version 10.2.5 or later)
 
 ### Installation
 
