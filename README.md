@@ -95,7 +95,7 @@ Before you start, ensure you have the following installed:
 
 Check out the live demo of the wedding invitation web app:
 
-[Live Demo](https://your-demo-url.com)
+[Live Demo](https://coming-soon-hehe.com)
 
 ## 📝 License
 
