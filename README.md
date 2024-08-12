@@ -6,7 +6,7 @@
 
 Welcome to the **Wedding Invitation Web App** repository! This project is a beautifully crafted, responsive web application for creating personalized wedding invitations.
 
-![Wedding Banner](https://ibb.co.com/JyjJxB5)
+[![Screenshot](https://i.ibb.co/pRjFW0J/Screenshot-2024-08-12-080657.png)](https://ibb.co.com/JyjJxB5)
 
 ## 🌟 Features
 
