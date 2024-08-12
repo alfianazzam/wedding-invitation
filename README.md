@@ -115,7 +115,7 @@ Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTIN
 
 If you have any questions or feedback, feel free to reach out:
 
-- Email: [your.email@example.com](mailto:alfian21azzam@gmail.com)
+- Email: [alfian21azzam@gmail.com](mailto:alfian21azzam@gmail.com)
 - GitHub: [@alviangans](https://github.com/alviangans)
 
 ---
